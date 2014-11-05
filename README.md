@@ -39,3 +39,5 @@ when.js relies on object getters and setters to function and thus your mileage m
 
 ## Future ##
 I will probably implement when.js with Promises as well.  Most likely in the form of if no callback is provided, it will return a promise instead.
+
+It could also be beneficial to have the option to pass in an array of variables that all need to be set before your code can run.
