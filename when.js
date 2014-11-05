@@ -1,0 +1,1 @@
+var when=function(){var n=[],t=[];return function(r,e){void 0!==window[r]?e():(n[r]=n[r]||[],n[r].push(e),window.hasOwnProperty(r)||Object.defineProperty(window,r,{get:function(){return t[r]},set:function(e){t[r]=e;for(var o=n[r].length,i=0;o>i;i++)n[r][i].call(this);n[r]=null}}))}}();

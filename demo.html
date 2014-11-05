@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>When.js</title>
+</head>
+
+<body>
+    <h1>when.js</h1>
+    <p class="first-result"></p>
+    <p class="second-result"></p>
+    
+    <script src="when.js"></script>
+    
+    <script async src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        when("$", function () {
+            $(".first-result").html("$ is defined here");
+        });
+        when("jQuery", function () {
+            jQuery(".second-result").html("jQuery is defined here too");
+        });
+    </script>
+
+</body>
+
+</html>
