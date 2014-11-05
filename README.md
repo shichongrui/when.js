@@ -2,7 +2,7 @@
 
 when.js was created while pondering about the async attribute on script tags.  When using the async attribute, there is no way of ensuring that your variables will be available when you need them regardless of the order of your script tags. 
 
-As an example, if you are using a framework or library on your site, you could just include the library/framework prior to including your own scripts and you could know that the needed variables such as `$` or `angular` would be available.  So you would have to leave the async attribute off of your library/framework includes.
+As an example, if you are using a framework or library on your site, you could just include the library/framework prior to including your own scripts and you could know that the needed variables such as `$` or `angular` would be available. But with the `async` attribute you don't know if the library will finish loading before your code runs. So you would have to leave the async attribute off of your library/framework includes.
 
 Thus when.js was born.  I wanted a way to still pull in all of my scripts using the async attribute without having to worry about what order they come in at. You can even include your use of the library before you include your library.
 
